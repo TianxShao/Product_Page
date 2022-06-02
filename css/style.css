@@ -1,0 +1,478 @@
+/* class for jquery */
+/* Enlarge font size */
+.enlarge{
+  font-size: 2.0em;
+}
+.enlarge1{
+  font-size: 3.0em;
+}
+/* change color to blue */
+.color_blue{
+  color: #3399ff;
+}
+/* *******************
+    Global Styling
+ *********************/
+
+body{
+  margin:0px;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Press Start 2P', sans-serif;
+  color: #fff;
+}
+h5{
+  font-size: 6px;
+}
+p,a,li,figcaption{
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+figcaption{
+  font-size:8px;
+  text-decoration: none;
+}
+/* ************* */
+/* Page Styling */
+/* ************ */
+header{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background-color: #0e0e0e;
+  position: fixed;
+  z-index: 9999;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Adjust header height and padding */
+header div{
+  height: 50px;
+  flex-grow: 1;
+  padding-left: 5px;
+}
+header div a img{
+  height: 100%;
+}
+header nav ul{
+  display: flex;
+  padding: 0px;
+  list-style: none;
+}
+header nav ul li{
+  padding: 0px 15px;
+}
+header nav ul li a{
+  color: #fff;
+}
+/* Adjust footer background color*/
+footer{
+  background-color: #0e0e0e;
+  padding: 5%;
+}
+footer h5{
+  color: #fff;
+  text-align: center;
+}
+/* Adjust hero image*/
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hero div{
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adjust hero text */
+.hero div h1{
+  color: #fff;
+  text-align: center;
+  font-size: 6em;
+}
+#content{
+  background-image: url('../img/background4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* Make video section a flexbox */
+#video{
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: space-around;
+}
+/* Adjust video margin and height */
+#video > div > iframe{
+  height: 100%;
+  margin-top: 50px;
+  padding-left: 30px;
+  border: none;
+}
+/* Adjust text beside the video */
+#video > div + div{
+  color:#fff;
+  padding-top: 160px;
+  padding-left: 60px;
+  align-items: center;
+  justify-content: center;
+}
+/* Show images of games horizontally with flexbox */
+#games{
+  padding-left: 30px;
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+#games div h2{
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+}
+/* Adjust figures */
+.game_image figure{
+  width: 200px;
+  height: auto;
+}
+.game_image figure img{
+  width:100%;
+}
+.game_image figure figcaption{
+  color:#fff;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+/* Adjust elements in the about page */
+#about_main{
+  background-image: url('../img/background2.png');
+  background-size: cover;
+  background-position: center;
+  padding:30px;
+  padding-top:200px;
+}
+#about_title div h1{
+  text-align: center;
+  color:#fff;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #000;
+}
+#about_page{
+  display: flex;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+  width:100%;
+  height: 400px;
+  column-gap:100px;
+  line-height:150%;
+  padding-top: 100px;
+  color:#fff;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px #000;
+}
+#about_page div{
+  height: 100%;
+}
+#about_page > div + div{
+  height: 100%;
+}
+/* Adjust elements in the product page */
+#product_page{
+  background-image: url('../img/background7.jpg');
+  background-size:cover;
+  background-position: center;
+  padding-left: 30px;
+}
+#product_nes{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-around;
+}
+#product_nes div{
+  margin-top: 150px;
+  line-height: 120%;
+}
+#product_nes div h1{
+  font-size: 40px;
+}
+#product_nes div p{
+  font-size: 16px;
+}
+#product_nes > div + div{
+  height: 100%;
+}
+#product_nes > div + div > img{
+  height: 80%;
+  width: 700px;
+}
+#product_game{
+  display:flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-around;
+}
+#product_game div{
+  margin-top:180px;
+  height: 100%;
+}
+#product_game div img{
+  height: 80%;
+  width: 450px;
+}
+#product_game > div + div{
+  line-height: 120%;
+  padding-left: 50px;
+  height: 100%;
+  padding-right: 50px;
+}
+#product_game > div + div > p{
+  font-size: 16px;
+  height: 100%;
+}
+#product_controller{
+  display:flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-around;
+}
+#product_controller div{
+  margin-top:180px;
+  line-height: 120%;
+}
+#product_controller div h1{
+  font-size: 40px;
+}
+#product_controller div p{
+  font-size: 16px;
+  padding-right: 100px;
+}
+#product_controller > div + div{
+  height: 75%;
+}
+#product_controller > div + div > img{
+  height: 180px;
+  width: 250px;
+  padding-right: 30px;
+}
+/* Adjust elements in the contact page */
+.contact_page{
+  background-image: url('../img/background8.jpg');
+  background-size:cover;
+  background-position: center;
+}
+#contact_page1{
+  background-color: rgba(0,0,0,0.5);
+}
+#contact_lvl1{
+  display: flex;
+  width: 100%;
+  height: 900px;
+  justify-content: space-around;
+}
+#contact_lvl1 section{
+  height:100%;
+}
+#contact_lvl1 section div:first-child{
+  margin-top: 180px;
+}
+#contact_lvl1 section div{
+  line-height: 120%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+#contact_lvl1 section div h1{
+  font-size: 40px;
+}
+#contact_lvl1 section div p{
+  font-size: 16px;
+}
+#contact_office{
+  height: 100%;
+}
+#contact_office img{
+  height: 50%;
+  padding-top: 200px;
+}
+/* Adjust form elements */
+#contact_lvl2 form{
+  text-align: center;
+  padding-bottom: 30px;
+}
+input[type=text],input[type=email]{
+  width: 20%;
+  /* padding: 5px 10px; */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#message{
+  height: 50px;
+}
+/* Change attributes of submit button */
+input[type=submit]{
+  width: 15%;
+  height: 30px;
+  margin: 25px 0;
+  background-color: #f4f4f4;
+  border-color: #ff1a1a;
+  border
+  color: #ff1a1a;
+  font-size: 20px;
+}
+
+/*            */
+/* Responsive */
+/*            */
+
+/* Breakpoint 1024px */
+@media screen and (max-width: 1024px){
+  #games{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: 1000px;
+    justify-items: center;
+  }
+  .game_image{
+    height: 100%;
+  }
+  .game_image figure{
+    height: 100%;
+  }
+  #product_game{
+    display:contents;
+  }
+  #product_game div:first-child{
+    margin-top: 251px;
+  }
+  #product_game > div + div{
+    margin-top: 20px;
+  }
+  #product_game > div + div > p{
+    padding-right: 200px;
+  }
+  #contact_lvl1 > section > div > h1{
+    line-height: 120%;
+  }
+}
+/* Breakpoint 900px */
+@media screen and (max-width: 900px){
+  #product_nes > div + div > img{
+    width: 55vw;
+  }
+  #product_controller div{
+    margin-top: 50px;
+  }
+  #contact_office img{
+    width: 50vw;
+  }
+
+  input[type=text],input[type=email]{
+    width: 300px;
+  }
+}
+/* Breakpoint 768px */
+@media screen and (max-width: 768px){
+  #video{
+    display: contents;
+  }
+  #video div:first-child{
+    height: 400px;
+  }
+  #product_controller{
+    display: contents;
+  }
+  #about_page{
+    display:contents;
+  }
+  #about_page > div + div{
+    padding-bottom: 200px;
+  }
+}
+/* Breakpoint 600px */
+@media screen and (max-width: 600px){
+  #product_nes{
+    display: contents;
+  }
+  #product_nes div{
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+  #product_nes div:first-child{
+    margin-top: 0px;
+    padding-top: 200px;
+  }
+  #product_game div:first-child{
+    margin-top: 50px;
+  }
+  #product_game > div + div > p{
+    padding-right: 30px;
+  }
+  #product_controller div p{
+    padding-right: 30px;
+  }
+  #contact_office img{
+    width: 20vw;
+    height: 30%;
+    display: none;
+  }
+}
+/* Breakpoint 480px */
+@media screen and (max-width: 480px){
+  #video > div > iframe{
+    padding-left: 0px;
+  }
+  #video> div + div{
+    padding-left: 0px;
+  }
+  #games{
+    padding-left: 0px;
+  }
+  #about_main{
+    padding-top: 100px;
+    height: 100%;
+  }
+  input[type=submit]{
+    font-size: 10px;
+  }
+  #product_page{
+    padding-left: 5px;
+  }
+}
+/* Breakpoint 320px */
+@media screen and (max-width: 320px){
+  #video{
+    height: 300px;
+  }
+  #video div:first-child{
+    display: none;
+  }
+  #video > div + div{
+    padding-right: 5px;
+    padding-top: 50px;
+  }
+  #games{
+    display:contents;
+  }
+  #games div h2{
+    padding-top: 50px;
+  }
+  .hero div h1{
+    font-size: 3em;
+  }
+}

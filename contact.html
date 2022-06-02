@@ -1,0 +1,81 @@
+<!-- Contact us page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact information">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <!-- Place the background image here -->
+      <div class="contact_page">
+        <div id="contact_page1">
+          <div id="contact_lvl1">
+            <section>
+              <div>
+                <h1>Contact Us</h1>
+                <p>We're here to help and answer any question you might have.<br></p>
+              </div>
+              <!-- Office address -->
+              <div>
+                <h3>Address:</h3>
+                <p>Nintendo of America<br>4600 150th Ave NE<br>Redmond, WA 98052<br></p>
+              </div>
+              <!-- phone number -->
+              <div>
+                <h3>Phone:</h3>
+                <p>1 (855) 548-4693</p>
+              </div>
+              <!-- Email address -->
+              <div>
+                <h3>Email:</h3>
+                <p><a href="mailto:contact@noa.nintendo.com">contact@noa.nintendo.com<br></a></p>
+              </div>
+            </section>
+            <!-- Add office image -->
+            <div id="contact_office">
+              <img src="./img/office.jpg" alt="office image">
+            </div>
+          </div>
+          <div id="contact_lvl2">
+            <!-- Contact form -->
+            <form>
+              <!-- Ask user for first name -->
+  						<h4>Fill in the form below and we will contact you.</h4>
+  						<br>
+  						<input type="text" name="fname" placeholder="First Name" required>
+  						<br>
+  						<!-- Ask user for last name -->
+  						<input type="text" name="lname" placeholder="Last Name" required>
+              <!-- Ask user for email -->
+  						<br>
+  						<input type="email" name="email" placeholder="Email" required>
+  						<br>
+              <!-- Ask user for a message -->
+  						<input type="text" name="message" id="message" placeholder="Message" required>
+              <br>
+              <!-- The submit button -->
+  						<input type="submit" name="submit" value="Submit">
+              <br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
